@@ -1,4 +1,4 @@
-package com.study.springSecurity2.service;
+package com.study.springSecurity.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
@@ -17,14 +17,14 @@ import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import com.study.springSecurity2.model.dto.SignRequestDTO;
-import com.study.springSecurity2.model.dto.SignResponseDTO;
-import com.study.springSecurity2.model.entity.Authority;
-import com.study.springSecurity2.model.entity.Member;
-import com.study.springSecurity2.model.repository.MemberRepository;
-import com.study.springSecurity2.model.service.SignService;
-import com.study.springSecurity2.security.enums.UserRole;
-import com.study.springSecurity2.security.provider.JwtProvider;
+import com.study.springSecurity.model.dto.SignRequestDTO;
+import com.study.springSecurity.model.dto.SignResponseDTO;
+import com.study.springSecurity.model.entity.Authority;
+import com.study.springSecurity.model.entity.Member;
+import com.study.springSecurity.model.repository.MemberRepository;
+import com.study.springSecurity.model.service.SignService;
+import com.study.springSecurity.security.enums.UserRole;
+import com.study.springSecurity.security.provider.JwtProvider;
 
 import jakarta.transaction.Transactional;
 

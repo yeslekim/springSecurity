@@ -1,4 +1,4 @@
-package com.study.springSecurity2.controller;
+package com.study.springSecurity.controller;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.mockito.ArgumentMatchers.any;
@@ -25,11 +25,11 @@ import org.springframework.web.context.WebApplicationContext;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.study.springSecurity2.model.dto.TokenDTO;
-import com.study.springSecurity2.model.dto.UserResponseDTO;
-import com.study.springSecurity2.model.entity.Authority;
-import com.study.springSecurity2.model.service.UserService;
-import com.study.springSecurity2.security.enums.UserRole;
+import com.study.springSecurity.model.dto.TokenDTO;
+import com.study.springSecurity.model.dto.UserResponseDTO;
+import com.study.springSecurity.model.entity.Authority;
+import com.study.springSecurity.model.service.UserService;
+import com.study.springSecurity.security.enums.UserRole;
 
 import jakarta.servlet.ServletException;
 
