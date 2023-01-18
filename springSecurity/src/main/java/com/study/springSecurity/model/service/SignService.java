@@ -71,7 +71,7 @@ public class SignService {
 				;
 	}
 	
-	public SignResponseDTO register(SignRequestDTO request) throws Exception {
+	public String register(SignRequestDTO request) throws Exception {
 		String result = "fail";
 		try {
 			Member member = Member.builder()
@@ -93,9 +93,7 @@ public class SignService {
 			throw new Exception("잘못된 요청입니다.");
 		}
 		
-		return SignResponseDTO.builder()
-				.result(result)
-				.build();
+		return result;
 	}
 	
 	// Refresh Token ====================

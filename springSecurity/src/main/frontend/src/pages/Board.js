@@ -18,7 +18,7 @@ const Complete = () => {
 
     const userGet = () => {        
         axios.defaults.headers.common['Authorization'] = `BEARER ${cookies.access_token}`;
-        axios.get('/user/get?account=abc123')
+        axios.get('/user/get')
         .then((res) => {
             console.log(res.data)
         });

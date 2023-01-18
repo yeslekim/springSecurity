@@ -11,6 +11,7 @@ import com.study.springSecurity.model.dto.SignRequestDTO;
 import com.study.springSecurity.model.dto.SignResponseDTO;
 import com.study.springSecurity.model.service.SignService;
 
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -20,7 +21,7 @@ public class SignController {
 	private final SignService signService;
 	
 	@PostMapping(value = "/register")
-	public ResponseEntity<SignResponseDTO> signup(@RequestBody SignRequestDTO signRequest) throws Exception {
+	public ResponseEntity<String> signup(@RequestBody SignRequestDTO signRequest) throws Exception {
 		return new ResponseEntity<>(signService.register(signRequest), HttpStatus.CREATED);
 	}
 	
