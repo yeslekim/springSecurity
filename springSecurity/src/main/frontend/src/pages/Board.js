@@ -22,7 +22,6 @@ const Complete = () => {
         .then((res) => {
             console.log(res.data)
         });
-    
     };
 
      // 더미 데이터 호출
@@ -77,13 +76,13 @@ const Complete = () => {
     };
 
     const handleCancel = () => {
-    setModalOn(false);
+        setModalOn(false);
     }
 
     const handleEditSubmit = (item) => {
-    console.log(item);
-    handleSave(item);
-    setModalOn(false);
+        console.log(item);
+        handleSave(item);
+        setModalOn(false);
     }
 
 
